@@ -1,0 +1,97 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: red;
+  text-shadow: 2px 2px #666666;
+
+}
+
+.row {
+  width: 100%;
+  float: left
+}
+
+.outer-box {
+  float: left;
+  padding: 10px;
+}
+
+.box {
+  border: 1px solid black;
+}
+
+.box > p {
+  margin: 10px;
+  font-family: Helvetica;
+  color: black;
+}
+
+.box > p.label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  color: white;
+  background-color: blue;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 30%;
+  float:right;
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .outer-box:nth-child(1) {
+    width: 33.33%;
+  }
+  .outer-box:nth-child(2) {
+    width: 33.33%;
+  }
+  .outer-box:nth-child(3) {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .outer-box:nth-child(1) {
+    width: 50%;
+  }
+  .outer-box:nth-child(2) {
+    width: 50%;
+  }
+  .outer-box:nth-child(3) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+ .outer-box:nth-child(1) {
+    width: 100%;
+  }
+  .outer-box:nth-child(2) {
+    width: 100%;
+  }
+  .outer-box:nth-child(3) {
+    width: 100%;
+  }
+}
+
+
+
+
+
